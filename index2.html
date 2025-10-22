@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Imobiliário - Entenda o Mercado com Clareza</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Montserrat & Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configurações personalizadas do Tailwind e Estilos -->
+    <style>
+        :root {
+            --color-primary: #1E3D58; /* Azul petróleo */
+            --color-secondary: #3B7A57; /* Verde petróleo */
+            --color-accent: #C9A227; /* Dourado leve */
+            --color-bg-light: #F7F8FA; /* Branco gelo */
+            --color-text-dark: #1E293B;
+            --color-text-light: #475569;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--color-text-dark);
+            background-color: var(--color-bg-light);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-primary);
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(247, 248, 250, 0.85), rgba(247, 248, 250, 0.95)), url('https://images.unsplash.com/photo-1560518883-ce09059ee41f?q=80&w=1973&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho e Navegação -->
+    <header id="main-header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold" style="color: var(--color-primary);">
+                <i data-lucide="home" class="inline-block -mt-1"></i>
+                Hub Imobiliário
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#conteudos" class="text-gray-600 hover:text-[--color-primary] transition">Conteúdos</a>
+                <a href="#simuladores" class="text-gray-600 hover:text-[--color-primary] transition">Simuladores</a>
+                <a href="#contato" class="text-white px-5 py-2 rounded-full" style="background-color: var(--color-secondary);">Fale com um Especialista</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#conteudos" class="block text-gray-600 hover:text-[--color-primary] transition">Conteúdos</a>
+            <a href="#simuladores" class="block text-gray-600 hover:text-[--color-primary] transition">Simuladores</a>
+            <a href="#contato" class="block mt-2 text-white px-5 py-2 rounded-full text-center" style="background-color: var(--color-secondary);">Fale com um Especialista</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal do Site (será escondido ao abrir um artigo) -->
+    <div id="main-content">
+        <main>
+            <!-- 1. Seção Home -->
+            <section id="home" class="hero-bg">
+                <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Entenda o mercado imobiliário com clareza e dados reais.</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8" style="color: var(--color-text-light);">Simule, aprenda e tome decisões seguras sobre o seu imóvel.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#conteudos" class="cta-button bg-white text-[--color-primary] border-2 border-[--color-primary] font-bold py-3 px-8 rounded-full shadow-lg">Explorar Conteúdos</a>
+                        <a href="#simuladores" class="cta-button text-white font-bold py-3 px-8 rounded-full shadow-lg" style="background-color: var(--color-primary);">Simular Agora</a>
+                    </div>
+                </div>
+                <div class="py-16 bg-white">
+                    <div class="container mx-auto px-6 text-center">
+                        <h2 class="text-3xl font-bold mb-4">Construído para sua segurança</h2>
+                        <p class="max-w-2xl mx-auto mb-10 text-gray-600">Nosso objetivo é te ajudar a tomar decisões seguras sobre compra, venda ou investimento, com base em 3 pilares:</p>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="bg-gray-50 p-8 rounded-xl shadow-sm"><i data-lucide="bar-chart-3" class="mx-auto h-12 w-12 mb-4" style="color: var(--color-secondary);"></i><h3 class="text-xl font-semibold mb-2">Informação Confiável</h3><p class="text-gray-500">Análises e guias práticos para você entender o cenário real do mercado.</p></div>
+                            <div class="bg-gray-50 p-8 rounded-xl shadow-sm"><i data-lucide="calculator" class="mx-auto h-12 w-12 mb-4" style="color: var(--color-secondary);"></i><h3 class="text-xl font-semibold mb-2">Simuladores Práticos</h3><p class="text-gray-500">Ferramentas para visualizar o impacto financeiro de cada escolha.</p></div>
+                            <div class="bg-gray-50 p-8 rounded-xl shadow-sm"><i data-lucide="user-check" class="mx-auto h-12 w-12 mb-4" style="color: var(--color-secondary);"></i><h3 class="text-xl font-semibold mb-2">Acompanhamento Especializado</h3><p class="text-gray-500">Apoio para interpretar os dados e traçar a melhor estratégia para você.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Seção de Conteúdos -->
+            <section id="conteudos" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold">Conteúdos para quem quer decidir com segurança.</h2>
+                        <p class="text-lg text-gray-600 mt-2">Educação e confiança para sua jornada imobiliária.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"><div class="p-8 flex-grow"><div class="flex items-center mb-4"><div class="p-3 rounded-full mr-4" style="background-color: rgba(59, 122, 87, 0.1);"><i data-lucide="clipboard-check" class="h-6 w-6" style="color: var(--color-secondary);"></i></div><h3 class="text-xl font-semibold">Crie sua Própria Avaliação: A Matriz de Pontos</h3></div><p class="text-gray-600 mb-6">Uma ferramenta prática para comparar imóveis e descobrir qual faz mais sentido para você.</p></div><div class="p-8 pt-0"><a href="#" class="font-bold hover:underline" data-page-button="artigo-1" style="color: var(--color-primary);">Ler mais &rarr;</a></div></div>
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"><div class="p-8 flex-grow"><div class="flex items-center mb-4"><div class="p-3 rounded-full mr-4" style="background-color: rgba(59, 122, 87, 0.1);"><i data-lucide="wrench" class="h-6 w-6" style="color: var(--color-secondary);"></i></div><h3 class="text-xl font-semibold">Vale a pena comprar um imóvel barato para reformar?</h3></div><p class="text-gray-600 mb-6">Entenda o que realmente pesa na conta antes de decidir e evite surpresas no orçamento.</p></div><div class="p-8 pt-0"><a href="#" class="font-bold hover:underline" data-page-button="artigo-2" style="color: var(--color-primary);">Ler mais &rarr;</a></div></div>
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"><div class="p-8 flex-grow"><div class="flex items-center mb-4"><div class="p-3 rounded-full mr-4" style="background-color: rgba(59, 122, 87, 0.1);"><i data-lucide="piggy-bank" class="h-6 w-6" style="color: var(--color-secondary);"></i></div><h3 class="text-xl font-semibold">Use seu FGTS de forma estratégica</h3></div><p class="text-gray-600 mb-6">Aprenda como o fundo pode acelerar sua compra, reduzir parcelas ou quitar sua casa mais cedo.</p></div><div class="p-8 pt-0"><a href="#" class="font-bold hover:underline" data-page-button="artigo-3" style="color: var(--color-primary);">Ler mais &rarr;</a></div></div>
+                    </div>
+                    <div class="text-center mt-16"><button id="btn-todos-conteudos" class="cta-button inline-block text-white font-bold py-3 px-8 rounded-full shadow-lg" style="background-color: var(--color-primary);">Ver todos os conteúdos</button></div>
+                </div>
+            </section>
+
+            <!-- 3. Seção de Simuladores -->
+            <section id="simuladores" class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold">Use nossos simuladores para entender o impacto das suas decisões.</h2>
+                        <p class="text-lg text-gray-600 mt-2">Engajamento e valor real para o seu planejamento.</p>
+                    </div>
+                    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                        <div class="border border-gray-200 rounded-xl p-8 text-center flex flex-col"><i data-lucide="fast-forward" class="mx-auto h-12 w-12 mb-4" style="color: var(--color-primary);"></i><h3 class="text-2xl font-semibold mb-3">Calculadora de Quitação Acelerada</h3><p class="text-gray-600 mb-6 flex-grow">Descubra quanto tempo e juros você pode economizar ao adicionar aportes extras mensais.</p><button class="cta-button w-full text-white font-bold py-3 px-8 rounded-full" style="background-color: var(--color-secondary);" data-page-button="simulador-1">Abrir Simulador</button></div>
+                        <div class="border border-gray-200 rounded-xl p-8 text-center flex flex-col"><i data-lucide="area-chart" class="mx-auto h-12 w-12 mb-4" style="color: var(--color-primary);"></i><h3 class="text-2xl font-semibold mb-3">Simulador de Financiamento</h3><p class="text-gray-600 mb-6 flex-grow">Compare parcelas e juros pelos sistemas SAC e Price, e descubra qual se adapta ao seu orçamento.</p><button class="cta-button w-full text-white font-bold py-3 px-8 rounded-full" style="background-color: var(--color-secondary);" data-page-button="simulador-2">Abrir Simulador</button></div>
+                    </div>
+                    <div class="text-center mt-16"><h3 class="text-2xl font-semibold mb-4">Quer que eu te ajude a interpretar seus resultados?</h3><a href="#contato" class="cta-button inline-block text-white font-bold py-3 px-8 rounded-full shadow-lg" style="background-color: var(--color-primary);">Fale com um especialista</a></div>
+                </div>
+            </section>
+
+            <!-- 4. Seção "Fale com um Especialista" -->
+            <section id="contato" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-2xl shadow-xl">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl md:text-4xl font-bold">Fale com um Especialista</h2>
+                            <p class="text-gray-600 mt-3">Conte um pouco sobre o seu momento. Vou te ajudar a entender o cenário ideal para você.</p>
+                        </div>
+                        <!-- FORMULÁRIO REMOVIDO E BOTÃO ADICIONADO ABAIXO -->
+                        <div class="mt-8 text-center">
+                            <!-- INDICAÇÃO 1: Link do WhatsApp no botão principal -->
+                            <!-- Cole o seu link completo do WhatsApp aqui no href="". Ex: https://wa.me/5511999998888 -->
+                            <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="cta-button inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-full shadow-lg text-lg" style="background-color: #25D366;">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.414z"/></svg>
+                                Conversar pelo WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- INÍCIO DAS PÁGINAS DE CONTEÚDO E SIMULADORES (ESCONDIDAS) -->
+    <!-- =================================================================== -->
+
+    <!-- Artigo 1: Matriz de Pontos --><section id="artigo-1" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- 
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Crie sua Própria Avaliação: A Matriz de Pontos</h1>
+            <p class="mt-4 text-lg text-gray-600">Monte sua "Matriz de Pontos" para comparar imóveis e decidir com confiança.</p>
+        </header>
+
+        <!-- Introduction -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <p class="text-base leading-relaxed">
+                Você visita o Imóvel A e adora a vista. Depois vai ao Imóvel B e gosta mais da planta. O Imóvel C parece ter a localização perfeita. Como decidir? A sensação de que você pode estar fazendo a escolha errada é paralisante.
+            </p>
+            <p class="mt-4 text-base leading-relaxed font-medium text-blue-600">
+                Vamos acabar com isso. A Matriz de Pontos é uma ferramenta simples que te coloca no controle. Com ela, você para de comparar "sentimentos" e passa a comparar uma pontuação final, objetiva e personalizada. É o seu próprio sistema de avaliação.
+            </p>
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Como Funciona? É Simples, em 2 Passos:</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Passo 1: Defina o que é Importante para VOCÊ (Os Pesos)</h3>
+                    <p class="mb-4">Nem todo mundo valoriza as mesmas coisas. O primeiro passo é dar um "Peso" de 1 a 5 para cada critério, refletindo o grau de importância que ele tem na sua vida.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Uma <strong>família com filhos</strong>, por exemplo, pode dar Peso 5 para "Proximidade a Escolas".</li>
+                        <li>Um <strong>investidor</strong> pode dar Peso 5 para "Potencial de Desenvolvimento".</li>
+                        <li>Alguém que preza pela <strong>tranquilidade</strong> pode dar Peso 5 para "Segurança".</li>
+                    </ul>
+                    <p class="mt-4 font-semibold">Seja honesto. Essa é a etapa que personaliza a avaliação para o seu plano de vida.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Passo 2: Dê a Nota para o Imóvel (A Pontuação)</h3>
+                    <p class="mb-4">Agora, para cada imóvel que você visitar, dê uma "Pontuação" de 1 a 5 para cada um desses critérios. Mas atenção: essa nota não é "achismo". Ela deve ser baseada nos dados oficiais que você já aprendeu a consultar:</p>
+                     <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>Potencial de Desenvolvimento:</strong> A nota vem da análise do PDU. Uma área ZOP (Ocupação Preferencial) recebe nota alta; uma ZOC (Consolidada), nota baixa.</li>
+                        <li><strong>Segurança:</strong> A nota vem dos dados da SESP. Bairros com menos crimes violentos recebem notas mais altas.</li>
+                        <li><strong>Perfil do Bairro:</strong> A nota vem dos dados do Censo (IBGE). Uma renda média maior e mais infraestrutura garantem uma nota alta.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Matrix Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Monte sua Matriz e Descubra o Vencedor</h2>
+            <p class="text-center text-gray-600 mb-6">Para cada critério, multiplique o <strong>Peso</strong> (o que é importante para você) pela <strong>Pontuação</strong> (a nota do imóvel com base nos dados). O resultado é a Pontuação Final. Some tudo e você terá a nota definitiva do imóvel!</p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-600">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 rounded-l-lg">Critério de Avaliação</th>
+                            <th scope="col" class="px-6 py-3">Fonte do Dado</th>
+                            <th scope="col" class="px-6 py-3 text-center">Meu Peso (1-5)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Pontuação do Imóvel (1-5)</th>
+                            <th scope="col" class="px-6 py-3 rounded-r-lg text-center">Pontuação Final (Peso x Pontuação)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Potencial de Desenvolvimento</th>
+                            <td class="px-6 py-4">PDU de Vitória</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-gray-50 border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Segurança (Crimes Violentos)</th>
+                            <td class="px-6 py-4">Dados da SESP</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Segurança (Furtos/Roubos)</th>
+                            <td class="px-6 py-4">Dados da SESP</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-gray-50 border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Perfil Socioeconômico do Bairro</th>
+                            <td class="px-6 py-4">Censo (IBGE)</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                         <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Proximidade a Escolas</th>
+                            <td class="px-6 py-4">Mapeamento</td>
+                           <td class="px-6 py-4"></td>
+                           <td class="px-6 py-4"></td>
+                           <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-gray-50 border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Proximidade a Saúde</th>
+                            <td class="px-6 py-4">Mapeamento</td>
+                           <td class="px-6 py-4"></td>
+                           <td class="px-6 py-4"></td>
+                           <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Outro Critério Pessoal:</th>
+                            <td class="px-6 py-4">(Ex: Proximidade do trabalho)</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="font-semibold text-gray-900 bg-gray-100">
+                            <th scope="row" colspan="4" class="px-6 py-3 text-base text-right rounded-l-lg">TOTAL</th>
+                            <td class="px-6 py-3 text-base text-center rounded-r-lg">(some tudo aqui)</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-6 rounded-r-lg shadow-md mt-8">
+            <p class="text-base leading-relaxed">
+                Essa matriz organiza a nuvem complexa de informações em um número final. Ela é a sua ferramenta definitiva para transformar a ansiedade em confiança e ter a certeza absoluta de que você fez a melhor escolha, não por sorte, mas por método.
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>
+           </div></section>
+    <!-- Artigo 2: Imóvel para reformar --><section id="artigo-2" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!--  <!-- Header -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Reforma à Vista</h1>
+            <p class="text-lg sm:text-xl text-gray-600 mt-2">O Guia Definitivo para Decidir com Segurança</p>
+        </header>
+
+        <main class="space-y-10">
+            <!-- Introduction Section -->
+            <section class="bg-white p-6 rounded-xl shadow-md">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4">Vale a pena comprar um imóvel mais barato para reformar?</h2>
+                <p class="text-base leading-relaxed">
+                    A oportunidade parece irresistível: um imóvel com a localização perfeita, um preço bem abaixo do mercado, precisando "só de um carinho". A tentação de comprar, reformar e ter um lar personalizado por menos é enorme. Mas essa decisão, se não for baseada em dados, pode transformar seu sonho no seu maior pesadelo financeiro.
+                </p>
+                <p class="mt-4 text-base leading-relaxed font-medium text-gray-700">
+                    Antes de dar qualquer passo, você precisa responder a duas perguntas cruciais que vão te proteger de armadilhas.
+                </p>
+            </section>
+
+            <!-- Question 1 Section -->
+            <section class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="flex items-center text-2xl font-bold text-gray-900 mb-6">
+                    <span class="bg-teal-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-bold">1</span>
+                    Por que este imóvel está tão barato?
+                </h3>
+                <p class="mb-6">
+                    Um preço significativamente abaixo do valor de mercado nunca é um presente. É um sinal de alerta máximo. Como um bom detetive, você precisa descobrir a verdadeira razão por trás do "desconto". Geralmente, o motivo está escondido em documentos:
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Há Riscos Legais?</h4>
+                            <p class="text-gray-600">A primeira coisa a fazer é pegar a Matrícula do Imóvel atualizada. O preço baixo pode ser consequência de ônus, penhoras ou disputas judiciais que trarão uma dor de cabeça e custos que você não previu.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Há Irregularidades na Construção?</h4>
+                            <p class="text-gray-600">Aquele cômodo extra ou a área de churrasco podem não estar na planta oficial. Peça a Certidão de Tempo de Cadastro na prefeitura. Se a área construída no documento for menor do que a área real, você está comprando um problema.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Há Problemas Estruturais Graves?</h4>
+                            <p class="text-gray-600">O preço pode estar baixo porque o imóvel tem problemas sérios de infiltração, elétrica, hidráulica ou até mesmo na fundação, que uma visita superficial não revela.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Question 2 Section -->
+            <section class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="flex items-center text-2xl font-bold text-gray-900 mb-6">
+                    <span class="bg-teal-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-bold">2</span>
+                    Qual é o Custo TOTAL da reforma?
+                </h3>
+                <p class="mb-6">
+                    Assim como no financiamento, o custo real vai muito além do que você vê. A conta não é "preço do imóvel + orçamento do pedreiro". A conta certa é:
+                </p>
+                <div class="bg-teal-50 border border-teal-200 text-teal-800 p-4 rounded-lg text-center my-6">
+                    <p class="font-bold text-lg">Preço do Imóvel + Custo Real da Reforma = <span class="text-xl">Custo Final</span></p>
+                </div>
+                <h4 class="font-semibold text-lg mb-4">O Custo Real da Reforma inclui:</h4>
+                <ul class="space-y-3 list-disc list-inside text-gray-700">
+                    <li><strong>Orçamentos Detalhados:</strong> Peça orçamentos de pelo menos três profissionais diferentes, com tudo detalhado (material e mão de obra).</li>
+                    <li><strong>Reserva de Emergência:</strong> Toda obra tem imprevistos. Adicione de 15% a 20% sobre o valor do melhor orçamento.</li>
+                    <li><strong>Custos de Regularização:</strong> Se descobriu obras irregulares, inclua os custos com arquiteto, taxas da prefeitura e cartório.</li>
+                    <li><strong>Seu Custo de Vida:</strong> Se não puder morar no imóvel durante a reforma, inclua o custo do aluguel temporário nessa conta.</li>
+                </ul>
+            </section>
+
+            <!-- Final Verdict Section -->
+            <section class="bg-gray-800 text-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-teal-400 mb-4 text-center">O Veredito Final: A Conta que te Salva</h2>
+                <p class="text-center text-gray-300 mb-6">
+                    Com o Custo Final em mãos, a decisão fica simples e matemática. Compare este número com o preço de um imóvel similar, já reformado e pronto para morar, na mesma região.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-green-500/20 border border-green-400 p-4 rounded-lg">
+                        <h4 class="font-bold text-xl text-green-300">Oportunidade de Ouro</h4>
+                        <p class="mt-2 text-green-100">Se o <strong class="font-bold">Custo Final for significativamente menor</strong>, você encontrou uma excelente oportunidade.</p>
+                    </div>
+                    <div class="bg-red-500/20 border border-red-400 p-4 rounded-lg">
+                        <h4 class="font-bold text-xl text-red-300">Dor de Cabeça</h4>
+                        <p class="mt-2 text-red-100">Se o <strong class="font-bold">Custo Final for parecido ou maior</strong>, é mais seguro e inteligente comprar o imóvel pronto.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Conclusion -->
+            <footer class="text-center mt-8 md:mt-12">
+                <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                    A decisão de reformar não deve ser emocional. Deve ser uma escolha baseada em investigação e em uma planilha de custos realista. Agindo assim, você protege seu dinheiro, seu tempo e, o mais importante, sua paz de espírito.
+                </p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 3: Uso do FGTS --><section id="artigo-3" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- <!-- Header -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-2">FGTS no Imóvel: Guia Inteligente</h1>
+            <p class="text-lg text-gray-600">Aprenda a usar seu Fundo de Garantia para comprar ou quitar a casa própria de forma estratégica.</p>
+        </header>
+
+        <!-- Introduction -->
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 mb-8">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Por que usar o FGTS é um bom negócio?</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Seu Fundo de Garantia é muito mais do que uma poupança para emergências. Ele é uma das ferramentas mais poderosas para viabilizar a compra do seu imóvel ou para cortar anos de financiamento. A lógica é simples: o rendimento do seu dinheiro parado na conta do FGTS é muito menor do que os juros que você paga ao banco no financiamento. Portanto, usar o FGTS para abater sua dívida é a decisão financeiramente mais inteligente.
+            </p>
+        </div>
+
+        <!-- Strategies Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Strategy 1: Direct Attack -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-blue-200 flex flex-col">
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Estratégia 1: O Ataque Direto</h3>
+                    <p class="text-gray-600 mb-4">(Para Quitar a Dívida Mais Rápido)</p>
+                    <p class="mb-4">
+                        <strong class="text-gray-900">Como funciona:</strong> Você usa o saldo do seu FGTS para fazer uma amortização extraordinária, ou seja, um pagamento que vai direto para abater o valor principal da sua dívida. É um golpe direto no coração do financiamento.
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="font-semibold text-blue-900 mb-2">O banco oferecerá duas alternativas:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><span class="font-medium">Reduzir o Prazo:</span> Você continua pagando a mesma parcela, mas por muito menos tempo. Essa é a escolha que mais economiza juros.</li>
+                            <li><span class="font-medium">Reduzir o Valor da Parcela:</span> O prazo original é mantido, mas suas prestações mensais diminuem, gerando um alívio imediato no orçamento.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 bg-gray-100 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-900">Quando usar?</p>
+                    <p class="text-gray-700">Ideal para quem tem estabilidade financeira e quer se livrar da dívida o mais rápido possível, pagando o mínimo de juros para o banco.</p>
+                </div>
+            </div>
+
+            <!-- Strategy 2: Protective Shield -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-green-200 flex flex-col">
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4">Estratégia 2: O Escudo Protetor</h3>
+                    <p class="text-gray-600 mb-4">(Para Momentos de Aperto)</p>
+                    <p class="mb-4">
+                        <strong class="text-gray-900">Como funciona:</strong> Você pode usar seu FGTS para pagar até 80% do valor de 12 prestações mensais seguidas.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Pense nesta opção como um "seguro de tranquilidade". Ela não ataca a dívida principal com tanta força, mas protege o seu fluxo de caixa e ajuda a manter o contrato em dia, sem sufoco e sem se endividar.
+                    </p>
+                </div>
+                <div class="mt-6 bg-gray-100 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-900">Quando usar?</p>
+                    <p class="text-gray-700">A ferramenta perfeita para quem está passando por uma dificuldade financeira temporária (redução de renda, despesa inesperada, etc.).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusion / How to Choose -->
+        <div class="mt-8 md:mt-12 bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Qual estratégia escolher?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                A decisão depende do seu momento de vida. Se as coisas estão estáveis, use a <strong>Estratégia 1</strong> para construir seu patrimônio mais rápido. Se você precisa de um fôlego no orçamento, a <strong>Estratégia 2</strong> é o seu escudo.
+            </p>
+            <div class="border-t pt-4 mt-4">
+                 <h4 class="font-semibold text-gray-900 mb-2">Fique atento às regras!</h4>
+                 <p class="text-sm text-gray-600">Lembre-se que existem algumas condições para o uso, como ter no mínimo 3 anos de trabalho com carteira assinada e não possuir outro imóvel na mesma cidade. Estando dentro das regras, não deixe de usar esse direito. Seu FGTS é um recurso seu!</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 md:mt-12">
+            <p class="text-sm text-gray-500">&copy; 2025 Guia FGTS no Imóvel. Informações baseadas no documento fornecido.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 4: Checklist da Visita Perfeita --><section id="artigo-4" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- 
+        <!-- Cabeçalho -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">Checklist da Visita Perfeita</h1>
+            <p class="mt-4 text-lg text-gray-600">O que observar (e perguntar) antes de se apaixonar por um imóvel.</p>
+        </header>
+
+        <!-- Introdução -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <p class="text-base leading-relaxed">
+                Visitar um imóvel é um momento emocionante. Você tenta se imaginar morando ali, planeja onde os móveis vão ficar... mas a ansiedade e o medo de deixar passar algum detalhe importante são enormes. A verdade é que uma visita bem feita vai muito além de gostar da cor da parede. É um trabalho de investigação. Este checklist vai te ajudar a olhar o imóvel com olhos de especialista, garantindo que sua decisão seja baseada em fatos, e não apenas na emoção.
+            </p>
+        </div>
+
+        <!-- Seção 1: O que Observar -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-6">Parte 1: O que Observar no Local (Seja um Detetive)</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="mb-6 text-gray-600">Antes de perguntar qualquer coisa, use seus olhos. Compare o que você vê com o que foi prometido e procure por sinais de alerta.</p>
+                <div id="observation-list">
+                    <!-- Itens do checklist serão adicionados aqui -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: O que Perguntar -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-6">Parte 2: O que Perguntar ao Corretor (A Conversa que Vale Dinheiro)</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                 <p class="mb-6 text-gray-600">Com suas observações em mãos, é hora de fazer as perguntas que vão proteger seu investimento. Mostre que você fez sua lição de casa.</p>
+                <div class="space-y-6">
+                    <!-- Bloco de Pergunta 1 -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-bold text-lg text-gray-900">Sobre a "saúde" legal do imóvel:</h3>
+                        <p class="mt-2 font-medium">"A Matrícula do imóvel está limpa? Existe alguma anotação de dívida, hipoteca, penhora ou ação judicial que eu precise saber?"</p>
+                        <p class="mt-2 text-sm text-gray-600"><span class="font-semibold text-blue-600">Por que perguntar:</span> A Matrícula é o "RG" do imóvel e revela qualquer risco legal ou financeiro escondido.</p>
+                    </div>
+
+                    <!-- Bloco de Pergunta 2 -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-bold text-lg text-gray-900">Sobre os custos totais:</h3>
+                        <p class="mt-2 font-medium">"Qual o custo mensal aproximado, somando a prestação + condomínio + IPTU + seguros obrigatórios (MIP e DFI)?"</p>
+                        <p class="mt-2 text-sm text-gray-600"><span class="font-semibold text-blue-600">Por que perguntar:</span> Isso te dá uma visão clara do seu compromisso financeiro total, muito além do valor da parcela do financiamento. É o seu Custo Efetivo Mensal.</p>
+                    </div>
+
+                    <!-- Bloco de Pergunta 3 -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-bold text-lg text-gray-900">Sobre o futuro do bairro:</h3>
+                        <p class="mt-2 font-medium">"Você sabe em qual zona do PDU (Plano Diretor Urbano) de Vitória este imóvel se encontra? É uma área com potencial de crescimento (ZOP) ou uma área mais restrita (ZOC)?"</p>
+                        <p class="mt-2 text-sm text-gray-600"><span class="font-semibold text-blue-600">Por que perguntar:</span> A resposta indica o potencial de valorização. Áreas designadas para crescimento no plano da prefeitura tendem a receber mais investimentos e se valorizar mais.</p>
+                    </div>
+
+                    <!-- Bloco de Pergunta 4 -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-bold text-lg text-gray-900">Sobre o estado do imóvel e a venda:</h3>
+                        <p class="mt-2 font-medium">"Quais reformas você acredita que são urgentes? Teria uma estimativa de custo?"</p>
+                        <p class="mt-2 font-medium">"Por que o proprietário está vendendo?"</p>
+                        <p class="mt-2 text-sm text-gray-600"><span class="font-semibold text-blue-600">Por que perguntar:</span> As respostas te ajudam a entender os custos imediatos pós-compra e a ter uma noção do contexto da negociação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusão -->
+        <footer class="text-center mt-12 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
+            <p class="font-semibold text-lg">Lembre-se: se apaixonar pelo imóvel é bom, mas fazer um negócio seguro e bem informado é ainda melhor.</p>
+            <p class="mt-2">Use esta lista para guiar sua visita e tomar a melhor decisão para o seu futuro.</p>
+        </footer>
+    </div>
+        </div></section>
+    <!-- Artigo 5: Segurança e Criminalidade --><section id="artigo-5" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!--   <!-- Cabeçalho -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Além do "Acho que é seguro"</h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">Como usar dados oficiais de criminalidade para fazer a escolha certa para o seu bairro.</p>
+        </header>
+
+        <main class="max-w-4xl mx-auto space-y-12">
+
+            <!-- Seção Introdutória: O Problema -->
+            <section class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">A segurança da sua família é inegociável.</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Como saber, de verdade, se um bairro é seguro? Perguntar para amigos, ler notícias ou apenas "sentir" o lugar durante uma visita pode levar a uma decisão baseada em percepções, e não em fatos. O medo de escolher uma região que se torne perigosa é real.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700 mt-4">
+                    A boa notícia é que você não precisa mais depender do "achismo". Existe uma forma objetiva de analisar a segurança de um bairro usando dados oficiais.
+                </p>
+            </section>
+
+            <!-- Seção da Fonte de Dados -->
+            <section class="text-center bg-blue-600 text-white p-8 rounded-xl shadow-lg">
+                 <h2 class="text-3xl font-bold mb-2">A Fonte da Verdade: SESP</h2>
+                 <p class="text-lg">
+                     A Secretaria de Estado da Segurança Pública (SESP) publica as estatísticas criminais de Vitória. Esses números são a sua fonte mais confiável para entender o que realmente acontece em cada região da cidade.
+                 </p>
+            </section>
+
+
+            <!-- O Segredo: Diferenciar os Crimes -->
+            <section>
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900">O segredo está em diferenciar os crimes</h2>
+                    <p class="text-lg text-gray-600 mt-2">Um número único de "taxa de criminalidade" pode ser enganoso. É preciso diferenciar os tipos de crime para uma análise correta.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Card: Crimes Contra o Patrimônio -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-yellow-500 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25-2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 3a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 12m15 0a2.25 2.25 0 01-2.25 2.25H12a2.25 2.25 0 01-2.25-2.25" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-gray-900">1. Crimes Contra o Patrimônio</h3>
+                        </div>
+                        <p class="text-gray-700 mb-2">(Furtos e Roubos)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Crimes como roubo de veículos ou furtos a residências tendem a se concentrar em bairros de maior poder aquisitivo e com grande movimento (ex: Praia do Canto, Jardim da Penha). Uma alta incidência pode indicar a necessidade de investir em segurança privada (câmeras, alarmes), mas não significa um risco iminente à sua integridade física no dia a dia.
+                        </p>
+                    </div>
+
+                    <!-- Card: Crimes Violentos -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-2 border-red-300 hover:shadow-lg transition-shadow duration-300">
+                         <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-red-500 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-gray-900">2. Crimes Violentos</h3>
+                        </div>
+                        <p class="text-gray-700 mb-2">(Contra a Pessoa)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Crimes como homicídios e lesões corporais são um fator de desvalorização muito mais direto e severo. Eles têm um impacto real na qualidade de vida e na sensação de segurança, representando um <span class="font-bold text-red-600">sinal de alerta vermelho</span>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Como usar a informação -->
+            <section class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Como usar essa informação a seu favor?</h2>
+                <p class="text-lg text-gray-600 text-center mb-6">Ao analisar um bairro, em vez de perguntar "qual a taxa de criminalidade?", faça as perguntas certas:</p>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-3">?</span>
+                        <p class="text-gray-800">Qual o <span class="font-bold">tipo de crime</span> mais comum aqui?</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-3">?</span>
+                        <p class="text-gray-800">É um bairro com mais <span class="font-bold">crimes patrimoniais</span>, que posso mitigar com segurança privada?</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 font-bold mr-3">?</span>
+                        <p class="text-gray-800">Ou é uma região com histórico de <span class="font-bold">crimes violentos</span>, o que seria um sinal de alerta?</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Conclusão -->
+            <footer class="text-center bg-gray-800 text-white p-8 rounded-xl shadow-lg mt-12">
+                <h3 class="text-2xl font-bold mb-4">Faça uma escolha consciente.</h3>
+                <p class="text-lg max-w-3xl mx-auto">
+                    Ao trocar a subjetividade pela análise de dados oficiais, você ganha o poder de precificar o risco real. Você para de reagir a uma percepção geral de "perigo" e passa a entender a natureza específica da segurança daquela microrregião, protegendo não apenas seu patrimônio, mas o que é mais valioso: a tranquilidade e o bem-estar da sua família.
+                </p>
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html> 
+        </div></section>
+    <!-- Artigo 6: Plano Diretor Urbano (PDU) --><section id="artigo-6" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!--  <!-- Header Section -->
+        <header class="text-center mb-10 md:mb-16">
+            <div class="inline-block bg-white p-4 rounded-full shadow-md mb-4">
+                 <i data-lucide="map" class="w-12 h-12 text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">O Futuro do Bairro Está no PDU</h1>
+            <p class="mt-4 text-lg text-gray-600">Um guia simples para entender o Plano Diretor de Vitória e prever a valorização do seu imóvel.</p>
+        </header>
+
+        <!-- Introduction -->
+        <section class="card p-6 md:p-8 mb-8">
+            <div class="flex items-center mb-4">
+                <i data-lucide="help-circle" class="w-8 h-8 text-yellow-500 mr-4"></i>
+                <h2 class="text-2xl font-bold">A Insegurança na Escolha do Bairro</h2>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+                Uma das suas maiores inseguranças é escolher o bairro certo, com medo de que ele se desvalorize no futuro. Você se pergunta: "Será que essa região vai melhorar ou piorar? Estou a fazer um investimento seguro?". A boa notícia é que você não precisa contar com a sorte. Existe um mapa para o futuro da cidade.
+            </p>
+        </section>
+
+        <!-- What is PDU? -->
+        <section class="card p-6 md:p-8 mb-8">
+            <div class="flex items-center mb-4">
+                 <i data-lucide="file-text" class="w-8 h-8 text-blue-600 mr-4"></i>
+                <h2 class="text-2xl font-bold">O Que é o Plano Diretor Urbano (PDU)?</h2>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                De forma simples, o PDU é a lei mais importante que define as regras para o crescimento da cidade pelos próximos 10 anos. Ele é o "manual de instruções" que diz onde se pode construir prédios mais altos, onde só pode ter casas, quais ruas podem ter comércio e quais áreas devem ser preservadas.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-r-lg">
+                <p>Imóveis localizados em áreas que o plano incentiva o desenvolvimento tendem a ter um potencial de valorização muito maior.</p>
+            </div>
+        </section>
+
+        <!-- Zoning Section -->
+        <section class="mb-8">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <i data-lucide="layers" class="w-8 h-8 text-green-600 mr-4"></i>
+                    <h2 class="text-3xl font-bold">A Palavra-Chave: Zoneamento</h2>
+                </div>
+                <p class="text-gray-600">A parte mais reveladora do PDU são os mapas de zoneamento. Entender a zona onde seu imóvel está localizado é fundamental.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- ZOC Card -->
+                <div class="card p-6 border-t-4 border-red-400">
+                    <h3 class="text-xl font-bold mb-3 text-red-700">Zona de Ocupação Consolidada (ZOC)</h3>
+                    <p class="text-gray-700">
+                        São áreas com regras mais restritivas. O objetivo é manter as características do bairro como ele já é, sem grandes mudanças. O potencial de novas construções (e de uma valorização explosiva) é menor.
+                    </p>
+                </div>
+                <!-- ZOP Card -->
+                <div class="card p-6 border-t-4 border-green-400">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Zona de Ocupação Preferencial (ZOP)</h3>
+                    <p class="text-gray-700">
+                       Essas são as áreas que a cidade designou para crescer. Aqui, a prefeitura permite construções maiores e mais tipos de comércio. Um imóvel numa ZOP tem, por lei, um valor intrínseco muito superior.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Cliff Section -->
+        <section class="card p-6 md:p-8 mb-8">
+            <div class="flex items-center mb-4">
+                 <i data-lucide="trending-up" class="w-8 h-8 text-indigo-600 mr-4"></i>
+                <h2 class="text-2xl font-bold">O "Penhasco de Valor" que Ninguém Vê</h2>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Um mesmo bairro pode ter zonas diferentes. A fronteira entre uma ZOC e uma ZOP, invisível para um observador comum, cria um "penhasco de valor".
+            </p>
+            <p class="text-gray-700 leading-relaxed font-medium">
+                Por exemplo, um apartamento numa rua em ZOC pode ter um limite de 3 andares. A poucos metros, uma rua paralela em ZOP pode permitir um edifício de 10 andares. O terreno na rua da ZOP é drasticamente mais valioso.
+            </p>
+        </section>
+        
+        <!-- Other Factors -->
+        <section class="card p-6 md:p-8 mb-8">
+             <div class="flex items-center mb-4">
+                 <i data-lucide="maximize" class="w-8 h-8 text-purple-600 mr-4"></i>
+                <h2 class="text-2xl font-bold">O Que Mais Olhar? O Coeficiente de Aproveitamento (CA)</h2>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+               Este número diz o quanto se pode construir em relação ao tamanho do lote. Um lote em uma zona com <strong class="text-purple-700">CA 4.0</strong> é muito mais valioso do que um lote idêntico em uma zona com <strong class="text-purple-700">CA 1.0</strong>, pois permite uma construção quatro vezes maior.
+            </p>
+        </section>
+
+        <!-- Conclusion -->
+        <footer class="text-center mt-10 md:mt-16 card p-8 bg-gray-800 text-white">
+             <div class="flex items-center justify-center mb-4">
+                <i data-lucide="check-circle" class="w-10 h-10 text-green-400 mr-3"></i>
+                <h2 class="text-2xl font-bold">Tome Decisões Baseadas em Factos</h2>
+            </div>
+            <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                Analisar o PDU tira sua decisão do campo da opinião e a coloca no campo dos factos. Você deixa de se perguntar "o que eu acho que vai acontecer?" e passa a ter dados concretos sobre o que a lei permite que aconteça. É a forma mais segura de proteger seu investimento.
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 7: Valor Venal vs. Mercado --><section id="artigo-7" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- <!-- Header -->
+        <header class="text-center mb-10 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Valor Venal vs. Valor de Mercado</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Um guia prático para usar os dados da Prefeitura e saber se o preço de um imóvel é justo.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-4xl mx-auto">
+
+            <!-- Introduction -->
+            <section class="mb-12">
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-4">Será que o preço é justo?</h2>
+                    <p class="text-gray-600 leading-relaxed">Uma das maiores inseguranças na hora de comprar um imóvel é a dúvida sobre o preço. Você olha anúncios, compara apartamentos parecidos, mas o mercado parece um grande "achismo", e o medo de fazer um mau negócio é constante.</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">E se eu te contasse que existe um número, um dado oficial da Prefeitura, que pode servir como sua "âncora" para descobrir se um preço está alinhado com a realidade? Vamos entender a diferença entre os dois valores que você vai encontrar.</p>
+                </div>
+            </section>
+
+            <!-- Definitions -->
+            <section class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Valor de Mercado -->
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Valor de Mercado: O Preço da "Vitrine"</h3>
+                    <p class="text-gray-600 leading-relaxed">Esse é o preço que você vê nos portais e que o corretor te apresenta. É o valor de venda do imóvel, influenciado pela lei da oferta e da procura, localização, acabamento e até por fatores emocionais. É, basicamente, o preço que o vendedor pede.</p>
+                </div>
+                <!-- Valor Venal -->
+                <div class="bg-blue-50 p-8 rounded-xl border border-blue-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Valor Venal: O Preço "Oficial"</h3>
+                    <p class="text-gray-600 leading-relaxed">Aqui está a sua ferramenta secreta. O Valor Venal é o preço que a Prefeitura calcula para o seu imóvel com o objetivo de cobrar o IPTU. Ele é obtido por uma fórmula padronizada, considerando fatores objetivos como localização, valor do m² e idade do imóvel.</p>
+                    <div class="mt-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md">
+                        <p class="font-bold">Atenção:</p>
+                        <p>Valor Venal <span class="font-bold">não é</span> o Valor de Mercado. Ele quase sempre será bem mais baixo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Trick -->
+            <section class="mb-12 bg-gray-800 text-white p-8 rounded-xl card-shadow">
+                <h2 class="text-3xl font-bold text-center mb-6 text-yellow-400">O Pulo do Gato: Comparando Preços</h2>
+                <p class="text-center text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">Embora o Valor Venal de um único imóvel não te diga muito, a <span class="font-bold">proporção entre os Valores Venais</span> de dois imóveis diferentes é um poderoso indicador para saber se o preço de mercado deles é justo.</p>
+            </section>
+
+            <!-- Practical Example -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8">Exemplo Prático</h2>
+                <div class="flex flex-col md:flex-row justify-center items-stretch gap-8">
+                    <!-- Imóvel A -->
+                    <div class="w-full md:w-1/2 bg-white p-8 rounded-xl card-shadow flex flex-col">
+                        <h4 class="text-2xl font-bold text-blue-700 mb-4 text-center">Imóvel A</h4>
+                        <div class="flex-grow">
+                            <p class="text-lg text-gray-600 mb-2">Preço de Venda: <span class="font-bold text-2xl block text-gray-900">R$ 800.000</span></p>
+                            <p class="text-lg text-gray-600">Valor Venal (IPTU): <span class="font-bold text-2xl block text-blue-600">R$ 300.000</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Imóvel B -->
+                    <div class="w-full md:w-1/2 bg-white p-8 rounded-xl card-shadow flex flex-col">
+                         <h4 class="text-2xl font-bold text-red-700 mb-4 text-center">Imóvel B</h4>
+                         <div class="flex-grow">
+                            <p class="text-lg text-gray-600 mb-2">Preço de Venda: <span class="font-bold text-2xl block text-gray-900">R$ 800.000</span></p>
+                            <p class="text-lg text-gray-600">Valor Venal (IPTU): <span class="font-bold text-2xl block text-red-600">R$ 240.000</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-green-50 p-8 rounded-xl border border-green-200">
+                    <h4 class="text-xl font-bold text-green-800 mb-3">O que isso significa?</h4>
+                    <p class="text-gray-700 leading-relaxed">Pela lógica oficial da Prefeitura, o <strong>Imóvel A é 25% mais "valioso"</strong> que o Imóvel B (R$ 300 mil é 25% maior que R$ 240 mil). No entanto, no mercado, ambos estão sendo vendidos pelo mesmo preço!</p>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Essa informação te dá um poder de análise que ninguém mais tem. Ela acende um alerta e te permite questionar:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Será que o Imóvel B está <span class="font-semibold">supervalorizado</span>?</li>
+                        <li>Ou será que o Imóvel A, que tem uma base de valor oficial maior, é uma <span class="font-semibold">oportunidade melhor</span> pelo mesmo preço?</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- How to Find -->
+            <section class="mb-12">
+                 <div class="bg-white p-8 rounded-xl card-shadow">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-4">Como Encontrar essa Informação?</h2>
+                    <p class="text-gray-600 leading-relaxed">O Valor Venal é um dado público. Você o encontra no documento chamado "Espelho do Valor Venal" ou nos dados de cálculo do IPTU, que podem ser acessados no Portal de Serviços da sua Prefeitura.</p>
+                    <p class="mt-2 text-gray-600 leading-relaxed">Você só precisa do número da <strong class="text-gray-900">Inscrição Fiscal</strong> do imóvel, que consta em qualquer carnê de IPTU.</p>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="text-center bg-blue-600 text-white p-8 rounded-xl">
+                 <h2 class="text-2xl font-bold mb-4">Sua Análise com Base em Dados</h2>
+                 <p class="leading-relaxed max-w-3xl mx-auto">Ao usar o Valor Venal, você deixa de depender apenas da sua intuição e passa a ter um dado oficial e imparcial para fundamentar sua análise. Ele não te dará o preço final, mas te entregará a confiança para questionar, negociar e, finalmente, ter a certeza de que está fazendo um negócio justo.</p>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-gray-500">
+            <p>&copy; 2025 Guia de Imóveis. Informação é poder na sua negociação.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 8: Matrícula do Imóvel --><section id="artigo-8" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl px-4 py-8 sm:py-12 md:py-16">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <div class="flex justify-center items-center gap-4 mb-4">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                <h1 class="text-4xl sm:text-5xl font-bold tracking-tight gradient-text">O RG do Imóvel</h1>
+            </div>
+            <p class="text-lg sm:text-xl text-gray-600">Um guia para ler a Matrícula e descobrir se há dívidas ou problemas escondidos.</p>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="mb-12">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4">O medo de todo comprador...</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Um dos maiores medos na hora de comprar um imóvel é descobrir um problema grave só depois de fechar o negócio. Dívidas antigas do proprietário, disputas judiciais, irregularidades na construção... como se proteger de tudo isso?
+                </p>
+                <p class="mt-4 text-gray-700 font-semibold leading-relaxed">
+                    A resposta está em um único documento: a <strong class="text-blue-600">Matrícula do Imóvel.</strong>
+                </p>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Pense na Matrícula como a certidão de nascimento e a biografia completa da propriedade. É a fonte definitiva da verdade sobre o status legal de um imóvel, e a sua maior garantia contra maus negócios.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why it's important Section -->
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Por que este documento é seu melhor amigo?</h2>
+            <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed">
+                A Matrícula é o instrumento que revela o risco de uma transação. Um preço de venda que parece "bom demais para ser verdade" muitas vezes esconde um perfil de alto risco. Saber ler as informações essenciais te dá poder na negociação e a paz de espírito de que você está fazendo um negócio seguro.
+            </p>
+        </section>
+
+        <!-- Checklist Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-8">O Checklist Essencial: O que Procurar na Matrícula</h2>
+            <div class="space-y-8">
+
+                <!-- Checklist Item 1: Ownership -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex-shrink-0 bg-blue-100 text-blue-700 rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">1</span>
+                            <h3 class="text-2xl font-bold text-blue-800">Quem é o verdadeiro dono?</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed ml-16">
+                            A Matrícula lista a sequência completa de proprietários do imóvel (a "Cadeia Dominial"). O objetivo aqui é simples: verificar se a pessoa ou empresa que está te vendendo a propriedade é, de fato, a dona legal e registrada. Isso te protege de fraudes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Checklist Item 2: Liens and Encumbrances -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex-shrink-0 bg-blue-100 text-blue-700 rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">2</span>
+                            <h3 class="text-2xl font-bold text-blue-800">Existem "fantasmas" no armário?</h3>
+                        </div>
+                         <div class="ml-16">
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                Esta é a parte mais crítica. Aqui ficam registradas todas as pendências (ônus e gravames) que podem afetar o imóvel. Fique atento a anotações de:
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <div><strong>Hipotecas ou Penhoras:</strong> O imóvel pode estar sendo usado como garantia de uma dívida do proprietário atual.</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <div><strong>Ações Judiciais:</strong> Mostra se o imóvel está envolvido em alguma disputa na justiça.</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <div><strong>Dívidas Fiscais:</strong> Revela se há impostos atrasados que podem recair sobre a propriedade.</div>
+                                </li>
+                            </ul>
+                            <p class="mt-4 text-sm text-gray-500 bg-yellow-50 p-3 rounded-lg">
+                                Uma Matrícula "limpa" indica baixo risco. Já uma com histórico complexo revela custos ocultos e potenciais dores de cabeça.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checklist Item 3: Property Description -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-8">
+                        <div class="flex items-center gap-4 mb-4">
+                           <span class="flex-shrink-0 bg-blue-100 text-blue-700 rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">3</span>
+                           <h3 class="text-2xl font-bold text-blue-800">O tamanho do imóvel confere?</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed ml-16">
+                            O documento traz as dimensões, limites e área construída oficiais. Compare essa informação com os dados do carnê de IPTU e com a realidade física. Discrepâncias são um sinal de alerta para obras irregulares que podem gerar multas e despesas com regularização.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mt-16 text-center">
+             <div class="bg-blue-800 text-white p-8 rounded-2xl shadow-xl">
+                 <h2 class="text-3xl font-bold mb-4">Diligência é a sua melhor proteção.</h2>
+                <p class="max-w-3xl mx-auto leading-relaxed">
+                    Pedir e analisar a Matrícula não é desconfiança, é inteligência. É o passo que separa um comprador amador de um comprador bem-informado e seguro. Este documento transforma sua ansiedade em confiança, pois ele te entrega o fato mais importante de todos: a verdadeira história do seu futuro lar.
+                </p>
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-6">
+        <p class="text-gray-500 text-sm">&copy; 2025 Guia do Imóvel Seguro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 9: Amortização Extraordinária --><section id="artigo-9" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-900 text-center">A Arma Secreta Contra os Juros</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-700 mb-4">Como a Amortização Extraordinária pode cortar anos do seu financiamento.</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600">
+                Um financiamento de 30 anos parece uma maratona interminável, não é? A ideia de se comprometer com uma dívida por tanto tempo é assustadora. Mas existe uma estratégia poderosa ao seu alcance para reduzir drasticamente o custo e o tempo da sua dívida.
+            </p>
+            <div class="mt-6 text-2xl font-bold p-4 bg-blue-100 text-blue-800 rounded-lg inline-block">
+                O nome dela é <span class="text-blue-900">amortização extraordinária.</span>
+            </div>
+        </section>
+
+        <!-- What it is Section -->
+        <section class="mt-16 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">O que é e por que funciona tão bem?</h3>
+            <p class="text-gray-700 mb-4">
+                Sua parcela mensal se divide em juros, seguros, taxas e a amortização (a parte que realmente diminui sua dívida). A amortização extraordinária é qualquer pagamento que você faz <strong class="font-semibold">além da sua parcela obrigatória.</strong>
+            </p>
+            <div class="mt-6 p-6 border-l-4 border-green-500 bg-green-50 rounded-r-lg">
+                <p class="text-lg font-semibold text-green-800">
+                    A mágica está aqui: 100% desse valor extra vai direto para abater o saldo devedor principal. Cada real pago de forma extraordinária ataca o coração da dívida, deixando de servir como base para o cálculo de juros futuros. É uma economia que se multiplica mês após mês.
+                </p>
+            </div>
+        </section>
+
+        <!-- Strategic Choices Section -->
+        <section class="mt-16">
+            <h3 class="text-2xl font-bold text-center mb-8">Ao amortizar, você tem duas escolhas estratégicas</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Option 1: Reduce Term -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-bold text-blue-800 mb-3">1. Reduzir o Prazo do Financiamento</h4>
+                    <p class="text-gray-600">
+                        Você continua pagando o mesmo valor de parcela, mas por muito menos tempo. Essa é a opção que <strong class="font-semibold">maximiza sua economia com juros</strong>, pois elimina as últimas e mais custosas parcelas do contrato. É a escolha ideal para quem quer se livrar da dívida o mais rápido possível.
+                    </p>
+                </div>
+                <!-- Option 2: Reduce Installment Value -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-500 transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-bold text-teal-800 mb-3">2. Reduzir o Valor da Parcela</h4>
+                    <p class="text-gray-600">
+                        O prazo original de 30 anos é mantido, mas o valor das suas prestações mensais diminui. Essa é a opção ideal para quem busca um <strong class="font-semibold">alívio imediato no orçamento mensal</strong>, liberando dinheiro para outras necessidades e melhorando seu fluxo de caixa.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Real Impact Section -->
+        <section class="mt-16">
+            <h3 class="text-2xl font-bold text-center mb-8">O impacto real em números</h3>
+            <div class="max-w-3xl mx-auto bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg shadow-md">
+                <p class="text-xl text-yellow-900">
+                    Em uma simulação, um único pagamento extra de <strong class="font-bold">R$ 20.000</strong>, feito 5 anos após o início do contrato, foi capaz de reduzir o prazo em <strong class="font-bold">65 parcelas</strong>.
+                </p>
+                <p class="mt-4 text-2xl font-extrabold text-yellow-900">
+                    Isso mesmo: um único aporte quitou mais de 5 anos de dívida!
+                </p>
+            </div>
+        </section>
+
+        <!-- FGTS Section -->
+        <section class="mt-16 text-center">
+             <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Aproveite seu FGTS!</h3>
+                <p class="text-gray-700">
+                    Usar seu FGTS para amortizar a dívida é quase sempre a decisão mais inteligente. O rendimento do seu dinheiro parado no fundo é muito menor do que os juros que você paga ao banco. Deixar de usar o FGTS para quitar seu financiamento é, na prática, perder dinheiro.
+                </p>
+             </div>
+        </section>
+        
+        <!-- Conclusion Section -->
+        <section class="mt-16 text-center">
+             <h3 class="text-3xl font-extrabold text-gray-900 mb-4">Assuma o controle da sua vida financeira</h3>
+             <p class="max-w-3xl mx-auto text-lg text-gray-600">
+                A amortização extraordinária muda o jogo. Ela transforma você de um pagador passivo em um gestor ativo do seu patrimônio. É a sua principal ferramenta para economizar milhares de reais e conquistar sua independência financeira muito antes do que você imagina.
+             </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2025 | Informação é poder. Use-a a seu favor.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 10: Score de Crédito --><section id="artigo-10" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!--  <!-- Cabeçalho -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-5xl font-bold text-blue-900 mb-2">Seu Score de Crédito Vale (Muito) Dinheiro</h1>
+            <p class="text-lg md:text-xl text-gray-600">Como uma boa pontuação pode economizar milhares de reais.</p>
+        </header>
+
+        <!-- Seção Principal -->
+        <main>
+            <!-- Introdução -->
+            <section class="bg-white p-6 rounded-2xl shadow-md mb-8">
+                <p class="text-lg leading-relaxed">
+                    Você já entendeu que o Custo Efetivo Total (CET) é o número mais importante para comparar financiamentos. Mas você sabia que existe um fator, totalmente sob seu controle, que pode diminuir drasticamente esse custo?
+                </p>
+                <p class="mt-4 text-2xl font-bold text-center text-blue-800">
+                    Esse fator é o seu score de crédito.
+                </p>
+                <p class="mt-4 text-lg leading-relaxed">
+                    Muitos pensam que o score serve apenas para aprovar ou negar o crédito. A verdade é que ele vai muito além: ele funciona como o principal instrumento do banco para definir o <strong class="font-semibold">preço do seu financiamento.</strong>
+                </p>
+            </section>
+
+            <!-- O que é o Score? -->
+            <section class="bg-white p-6 rounded-2xl shadow-md mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center">O que é o Score de Crédito?</h2>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="md:w-1/3 text-center">
+                        <svg class="w-24 h-24 text-blue-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="mb-4">Pense no score como um resumo dos seus hábitos financeiros, uma pontuação de <strong>0 a 1.000</strong> que indica a probabilidade de você pagar suas contas em dia. Para o banco, um score alto é um sinal verde, mostrando que você é um cliente de baixo risco. Um score baixo é um sinal de alerta.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+                            <div class="p-4 rounded-lg bg-green-100 text-green-900">
+                                <h3 class="font-bold text-lg">Score Alto (acima de 701)</h3>
+                                <p>Visto como excelente pagador. O banco oferece juros mais baixos e melhores condições.</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-red-100 text-red-900">
+                                <h3 class="font-bold text-lg">Score Baixo (abaixo de 500)</h3>
+                                <p>Maior risco de inadimplência. O banco pode negar o crédito ou aprovar com juros mais altos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Impacto no Bolso -->
+            <section class="card-gradient p-8 rounded-2xl shadow-lg mb-8 text-center border border-blue-200">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">O Impacto no seu Bolso: Uma Simulação Real</h2>
+                <p class="text-lg mb-4">A diferença de juros entre um bom e um mau pagador não é pequena. Ela representa uma fortuna ao longo de 30 anos.</p>
+                <div class="bg-blue-800 text-white p-6 rounded-xl inline-block">
+                    <p class="text-xl">Um aumento de apenas <strong>2%</strong> na taxa de juros pode gerar um custo extra de mais de</p>
+                    <p class="text-4xl md:text-5xl font-bold my-2">R$ 168.000,00</p>
+                    <p class="text-xl">ao final do contrato de um financiamento de R$ 300.000.</p>
+                </div>
+                <p class="mt-4 text-lg font-medium text-gray-700">Isso mesmo. Um bom histórico de crédito poderia te economizar o valor de um carro de luxo.</p>
+            </section>
+
+            <!-- Como o score é calculado? -->
+            <section class="bg-white p-6 rounded-2xl shadow-md mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6 text-center">Como o score é calculado?</h2>
+                <p class="text-center mb-6">A boa notícia é que o score não é um número fixo; ele é um reflexo do seu comportamento. Os fatores de maior impacto são:</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="bg-blue-500 text-white rounded-full h-8 w-8 text-center leading-8 font-bold mr-4 flex-shrink-0">1</span>
+                        <div>
+                            <h3 class="font-bold text-lg">Compromisso com o Crédito</h3>
+                            <p>Pagar suas contas e faturas em dia é o ponto fundamental.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-blue-500 text-white rounded-full h-8 w-8 text-center leading-8 font-bold mr-4 flex-shrink-0">2</span>
+                        <div>
+                            <h3 class="font-bold text-lg">Histórico de Dívidas</h3>
+                            <p>Ter o nome negativado tem um impacto severo na sua pontuação.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-blue-500 text-white rounded-full h-8 w-8 text-center leading-8 font-bold mr-4 flex-shrink-0">3</span>
+                        <div>
+                            <h3 class="font-bold text-lg">Buscas por Crédito</h3>
+                            <p>Solicitar crédito em vários lugares em um curto período pode ser interpretado como um sinal de dificuldade financeira.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Recomendação Final -->
+            <section class="bg-blue-900 text-white p-8 rounded-2xl shadow-lg text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">A Recomendação Final</h2>
+                <p class="text-lg leading-relaxed">Seu score de crédito é um <strong>ativo financeiro</strong>. Antes de iniciar a busca pelo imóvel, dedique um tempo para consultar sua pontuação e, se necessário, melhorá-la.</p>
+                <p class="mt-4 text-lg leading-relaxed font-semibold">Gerenciar seu score de forma proativa é uma das atitudes mais inteligentes que você pode tomar. Não se trata apenas de conseguir a aprovação do financiamento, mas de garantir que você pague o menor preço possível por ele.</p>
+            </section>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer class="text-center mt-10 text-gray-500">
+            <p>&copy; 2025 | Informações sobre Crédito. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+        </div></section>
+    <!-- Artigo 11: Anatomia da Parcela --><section id="artigo-11" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!--   <header class="text-center py-12">
+            <h1 class="text-4xl md:text-6xl font-black gradient-text mb-4">Para Onde Vai o Seu Dinheiro?</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">A anatomia da parcela do financiamento.</p>
+        </header>
+
+        <main class="space-y-12 md:space-y-16">
+
+            <section class="bg-white rounded-2xl shadow-lg p-8">
+                <p class="text-center text-lg leading-relaxed max-w-4xl mx-auto">
+                    Quando você paga a parcela do financiamento, pode parecer que está simplesmente enviando um valor único para o banco. Mas a verdade é que, por trás daquele número, seu dinheiro se divide em quatro destinos diferentes. Entender essa divisão é o passo mais importante para você ter controle sobre sua dívida e saber como construir seu patrimônio de forma mais rápida.
+                </p>
+            </section>
+            
+            <section>
+                <h2 class="text-3xl font-bold text-center mb-8">Abrindo o Capô da Sua Prestação</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Amortização -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#00A6FB]">
+                        <h3 class="text-2xl font-bold mb-3 text-[#00A6FB]">1. Amortização: A única parte que vira sua.</h3>
+                        <p class="text-gray-600 mb-4">Essa é a parte mais importante. A amortização é o valor que realmente abate o principal da sua dívida. É a única fatia da parcela que se transforma em patrimônio, aumentando a sua participação no imóvel. O foco de um financiamento inteligente é sempre maximizar a amortização.</p>
+                    </div>
+
+                    <!-- Juros -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#DC0073]">
+                        <h3 class="text-2xl font-bold mb-3 text-[#DC0073]">2. Juros: O "aluguel" do dinheiro.</h3>
+                        <p class="text-gray-600 mb-4">Os juros são o custo do empréstimo. Eles são calculados todos os meses sobre o saldo devedor. No início do financiamento, quando o saldo devedor é enorme, a maior parte da sua parcela é consumida pelos juros, por isso a dívida parece diminuir tão devagar.</p>
+                    </div>
+
+                    <!-- Seguros Obrigatórios -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#FF7700]">
+                        <h3 class="text-2xl font-bold mb-3 text-[#FF7700]">3. Seguros Obrigatórios: Sua rede de segurança.</h3>
+                        <p class="text-gray-600 mb-2">A lei exige seguros para proteger você e o banco de imprevistos:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li><strong>MIP (Morte e Invalidez Permanente):</strong> Garante que, caso algo grave aconteça, o saldo devedor será quitado.</li>
+                            <li><strong>DFI (Danos Físicos ao Imóvel):</strong> Cobertura contra incêndios, desmoronamentos, etc.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Taxas Administrativas -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-gray-400">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-600">4. Taxas Administrativas</h3>
+                        <p class="text-gray-600 mb-4">É uma pequena parte da prestação destinada a cobrir os custos de gestão e administração do seu contrato pelo banco.</p>
+                    </div>
+                </div>
+            
+
+            <section class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-center mb-4">O Conceito que Muda o Jogo: Saldo Devedor</h2>
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mb-8">Pense no Saldo Devedor como o seu verdadeiro adversário. De tudo o que você paga na parcela, apenas a amortização ataca e diminui esse valor. Juros, seguros e taxas são despesas que não voltam.</p>
+                
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6 text-center">
+                    <div class="p-6 bg-gray-100 rounded-lg text-center">
+                         <p class="text-lg">Sua Parcela Mensal</p>
+                         <p class="text-4xl font-black text-gray-700">R$ 2.500</p>
+                    </div>
+                    <div class="text-4xl font-bold text-gray-300">→</div>
+                    <div class="p-6 bg-[#00A6FB] text-white rounded-lg shadow-md">
+                         <p class="text-lg">Apenas a Amortização ataca o</p>
+                         <p class="text-4xl font-black">SALDO DEVEDOR</p>
+                    </div>
+                </div>
+
+                <p class="max-w-3xl mx-auto text-center text-gray-600 mt-8">
+                    É por isso que a eficiência de um financiamento se mede pela velocidade com que ele reduz o saldo devedor. Quanto mais rápido você diminui essa dívida principal, menos juros pagará sobre ela no futuro.
+                </p>
+            </section>
+        </main>
+        
+        <footer class="text-center py-12 mt-8 border-t">
+            <p class="font-bold text-xl">Agora você não vê mais a parcela como um valor único, mas como uma ferramenta.</p>
+            <p class="text-gray-600 max-w-2xl mx-auto">Esse conhecimento é o que te permite tomar as melhores decisões para quitar seu imóvel o mais rápido possível e com o menor custo.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+        </div></section>
+    
+    <!-- Simulador 1: Quitação Acelerada --><section id="simulador-1" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- 
+        <!-- Cabeçalho -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Calculadora de Quitação Acelerada</h1>
+            <p class="mt-2 text-lg text-slate-600">Descubra o poder de um aporte extra mensal no seu financiamento.</p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                
+                <!-- Coluna do Formulário -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-2xl font-semibold mb-6 text-slate-900 border-b pb-3">Simule sua Amortização</h2>
+                    <form id="amortization-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Sistema de Amortização</label>
+                            <div class="flex items-center space-x-4">
+                                <label class="flex items-center">
+                                    <input type="radio" name="amortizationSystem" value="PRICE" class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500" checked>
+                                    <span class="ml-2">Tabela Price</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="amortizationSystem" value="SAC" class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
+                                    <span class="ml-2">SAC</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="currentBalance" class="block text-sm font-medium text-slate-700">Saldo Devedor Atual (R$)</label>
+                            <input type="number" id="currentBalance" placeholder="Ex: 300000" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" required>
+                        </div>
+
+                        <div>
+                            <label for="interestRate" class="block text-sm font-medium text-slate-700">Taxa de Juros Anual (%)</label>
+                            <input type="number" id="interestRate" step="0.01" placeholder="Ex: 9.5" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" required>
+                        </div>
+
+                        <div>
+                            <label for="remainingTerm" class="block text-sm font-medium text-slate-700">Prazo Restante (em meses)</label>
+                            <input type="number" id="remainingTerm" placeholder="Ex: 300" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" required>
+                        </div>
+
+                        <div>
+                            <label for="monthlyExtraPayment" class="block text-sm font-medium text-slate-700">Aporte Extra Mensal (R$)</label>
+                            <input type="number" id="monthlyExtraPayment" placeholder="Ex: 500" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" required>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+                            Calcular Aceleração
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Coluna dos Resultados -->
+                <div class="lg:col-span-3">
+                     <h2 class="text-2xl font-semibold mb-6 text-slate-900 border-b pb-3">Resultado da Simulação</h2>
+                    <div id="results-container" class="space-y-4">
+                        <div id="placeholder" class="text-center py-16 px-6 bg-slate-100 rounded-lg">
+                            <p class="text-slate-500">Preencha os dados ao lado para ver o impacto da sua amortização mensal.</p>
+                        </div>
+                        <!-- O card de resultado será inserido aqui -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Seção de Avisos Importantes -->
+        <section id="warnings-section" class="mt-8 md:mt-12 bg-amber-100 border-l-4 border-amber-500 text-amber-800 p-6 rounded-r-lg shadow hidden">
+            <h3 class="text-xl font-bold mb-2">Avisos Importantes</h3>
+            <ul class="list-disc list-inside space-y-2 text-sm md:text-base">
+                <li><strong>Estes valores são uma simulação.</strong> Os números são uma projeção muito próxima da realidade, mas os valores finais exatos devem ser confirmados com seu banco, pois o cálculo oficial da instituição pode ter pequenas variações.</li>
+                <li><strong>Sua parcela real inclui seguros e taxas.</strong> A simulação foca no impacto sobre juros e amortização. Sua parcela paga ao banco inclui também componentes como os seguros MIP e DFI e outras taxas.</li>
+                <li><strong>Amortização mensal:</strong> A maioria dos bancos permite amortizações a qualquer momento. Verifique se seu banco permite agrupar aportes ou se cada amortização precisa ser feita manualmente. Esta simulação assume que o valor extra é usado integralmente para abater o saldo devedor todo mês.</li>
+            </ul>
+        </section>
+
+        <!-- Seção Informativa -->
+        <section class="mt-12 md:mt-16 pt-8 border-t">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-900">Entenda seu Financiamento</h2>
+            <div class="space-y-10">
+                <!-- O que compõe sua parcela -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700">O que compõe sua parcela?</h3>
+                    <p class="mb-4">Cada pagamento mensal é dividido em quatro componentes principais:</p>
+                    <ul class="space-y-3">
+                        <li><strong>Amortização:</strong> É a parte que efetivamente reduz sua dívida principal. É o único valor que se converte em patrimônio para você.</li>
+                        <li><strong>Juros:</strong> O custo do dinheiro emprestado, ou seja, o lucro do banco. Calculado sobre o saldo devedor restante.</li>
+                        <li><strong>Seguros Obrigatórios:</strong> Protegem você e o banco. Os principais são o MIP (Morte e Invalidez Permanente) e o DFI (Danos Físicos ao Imóvel).</li>
+                        <li><strong>Taxas Administrativas:</strong> Custos de gestão do seu contrato de financiamento.</li>
+                    </ul>
+                </div>
+
+                <!-- SAC vs Price -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700">Análise Comparativa: SAC vs. PRICE</h3>
+                    <p class="mb-4">A escolha do sistema de amortização impacta o valor das parcelas e o custo total do seu financiamento.</p>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Critério</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Sistema SAC</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Tabela PRICE</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr><td class="px-6 py-4 font-medium">Valor da Parcela</td><td class="px-6 py-4">Começa mais alta e diminui com o tempo.</td><td class="px-6 py-4">Constante durante todo o contrato (amortização + juros).</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Amortização da Dívida</td><td class="px-6 py-4">Rápida desde o início.</td><td class="px-6 py-4">Lenta no início, acelerando no final.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Custo Total de Juros</td><td class="px-6 py-4 text-green-600 font-semibold">Menor.</td><td class="px-6 py-4 text-red-600 font-semibold">Maior.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Ideal para quem...</td><td class="px-6 py-4">Busca economizar mais no longo prazo e tem uma renda inicial maior.</td><td class="px-6 py-4">Precisa de uma parcela inicial menor para aprovar o crédito.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 pt-6 border-t">
+            <p class="text-sm text-slate-500">&copy; 2025 Calculadora de Quitação Acelerada. Uma ferramenta para seu planejamento financeiro.</p>
+        </footer>
+    </div>
+        </div></section>
+    <!-- Simulador 2: Financiamento SAC/Price --><section id="simulador-2" class="page-view hidden py-20"><div class="container mx-auto px-6 max-w-4xl"><button class="btn-voltar font-bold hover:underline mb-8" style="color: var(--color-primary);">&larr; Voltar</button><!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Financiamento Imobiliário</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tab-button.active {
+            border-color: #3b82f6;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        .loader {
+            border-top-color: #3498db;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-600">Simulador de Financiamento Imobiliário</h1>
+            <p class="text-gray-600 mt-2">Calcule e compare sua parcela mensal pelos sistemas SAC e Price.</p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+            
+            <!-- Formulário de Entrada -->
+            <div id="form-section">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="propertyValue" class="block text-sm font-medium text-gray-700 mb-1">Valor do Imóvel (R$)</label>
+                        <input type="text" id="propertyValue" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Ex: 300.000,00">
+                    </div>
+                    <div>
+                        <label for="downPayment" class="block text-sm font-medium text-gray-700 mb-1">Valor da Entrada (R$)</label>
+                        <input type="text" id="downPayment" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Ex: 60.000,00">
+                    </div>
+                    <div>
+                        <label for="interestRate" class="block text-sm font-medium text-gray-700 mb-1">Taxa de Juros Anual (%)</label>
+                        <input type="text" id="interestRate" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Ex: 9.5">
+                    </div>
+                    <div>
+                        <label for="loanTerm" class="block text-sm font-medium text-gray-700 mb-1">Prazo do Financiamento (anos)</label>
+                        <input type="number" id="loanTerm" value="30" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+                <button id="calculateBtn" class="w-full mt-8 bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Calcular Financiamento
+                </button>
+            </div>
+
+            <!-- Seção de Resultados -->
+            <div id="results-section" class="hidden mt-10">
+                <div id="loader" class="hidden w-12 h-12 rounded-full border-4 border-gray-200 loader mx-auto my-8"></div>
+                <div id="results-content">
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-lg mb-8" role="alert">
+                        <p class="font-bold">Atenção!</p>
+                        <p>Os valores apresentados são uma simulação e podem variar. O cálculo não inclui todas as taxas e seguros que compõem o Custo Efetivo Total (CET) de um financiamento real. Consulte sempre uma instituição financeira para obter uma proposta definitiva.</p>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-center mb-6">Resultados da Simulação</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                        <!-- Card SAC -->
+                        <div class="bg-gray-100 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-3 text-blue-700">Sistema SAC</h3>
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-600">Primeira Parcela</p>
+                                <p id="sac-first" class="text-2xl font-bold text-gray-800">-</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600">Última Parcela</p>
+                                <p id="sac-last" class="text-2xl font-bold text-gray-800">-</p>
+                            </div>
+                        </div>
+                        <!-- Card Price -->
+                        <div class="bg-gray-100 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-3 text-green-700">Tabela Price</h3>
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-600">Parcela Fixa</p>
+                                <p id="price-payment" class="text-2xl font-bold text-gray-800">-</p>
+                            </div>
+                             <div class="opacity-0 pointer-events-none">
+                                <p class="text-sm text-gray-600">&nbsp;</p>
+                                <p class="text-2xl font-bold text-gray-800">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tabela de Amortização -->
+                    <div class="mt-10">
+                         <div class="border-b border-gray-200 mb-4">
+                            <nav class="-mb-px flex justify-center space-x-8" aria-label="Tabs">
+                                <button class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm active" data-target="sac-table-container">Tabela SAC</button>
+                                <button class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="price-table-container">Tabela Price</button>
+                            </nav>
+                        </div>
+                        <div id="sac-table-container" class="overflow-x-auto"></div>
+                        <div id="price-table-container" class="hidden overflow-x-auto"></div>
+                    </div>
+
+                    <button id="recalculateBtn" class="w-full mt-8 bg-gray-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-gray-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        Fazer Nova Simulação
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center mt-8 text-sm text-gray-500">
+            <p>Informações de cálculo baseadas nos documentos de referência sobre Financiamento Imobiliário.</p>
+        </footer>
+    </div>
+
+
+    
+        </div></section>
+
+    <!-- Página com a lista de todos os conteúdos -->
+    <section id="todos-conteudos" class="page-view hidden py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <button class="btn-voltar font-bold hover:underline mb-12" style="color: var(--color-primary);">&larr; Voltar para o início</button>
+            <div class="text-center mb-12"><h2 class="text-4xl font-bold">Todos os Conteúdos</h2><p class="text-lg text-gray-600 mt-2">Navegue por nossos guias e artigos para tomar a melhor decisão.</p></div>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Crie sua Própria Avaliação: A Matriz de Pontos</h3><p class="text-gray-600 mt-1">Monte sua "Matriz de Pontos" para comparar imóveis e decidir com confiança.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-1">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Vale a pena comprar um imóvel mais barato para reformar?</h3><p class="text-gray-600 mt-1">O Guia Definitivo para Decidir com Segurança</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-2">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">FGTS no Imóvel: Guia Inteligente</h3><p class="text-gray-600 mt-1">Aprenda a usar seu Fundo de Garantia para comprar ou quitar a casa própria de forma estratégica.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-3">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Checklist da Visita Perfeita</h3><p class="text-gray-600 mt-1">O que observar (e perguntar) antes de se apaixonar por um imóvel.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-4">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Além do "Acho que é seguro"</h3><p class="text-gray-600 mt-1">Como usar dados oficiais de criminalidade para fazer a escolha certa para o seu bairro.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-5">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">O Futuro do Bairro Está no PDU</h3><p class="text-gray-600 mt-1">Um guia simples para entender o Plano Diretor de Vitória e prever a valorização do seu imóvel.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-6">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Valor Venal vs. Valor de Mercado</h3><p class="text-gray-600 mt-1">Um guia prático para usar os dados da Prefeitura e saber se o preço de um imóvel é justo.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-7">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">O RG do Imóvel</h3><p class="text-gray-600 mt-1">Um guia para ler a Matrícula e descobrir se há dívidas ou problemas escondidos.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-8">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">A Arma Secreta Contra os Juros</h3><p class="text-gray-600 mt-1">Como a Amortização Extraordinária pode cortar anos do seu financiamento.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-9">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Seu Score de Crédito Vale (Muito) Dinheiro</h3><p class="text-gray-600 mt-1">Como uma boa pontuação pode economizar milhares de reais.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-10">Ler mais &rarr;</a></div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"><div><h3 class="text-xl font-semibold">Para Onde Vai o Seu Dinheiro?</h3><p class="text-gray-600 mt-1">A anatomia da parcela do financiamento.</p></div><a href="#" class="font-bold text-nowrap text-[--color-primary] hover:underline flex-shrink-0" data-page-button="artigo-11">Ler mais &rarr;</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="main-footer" class="bg-white border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 Hub Imobiliário. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Uma plataforma para decisões imobiliárias inteligentes.</p>
+        </div>
+    </footer>
+    
+    <!-- INDICAÇÃO 2: Link do WhatsApp no botão flutuante -->
+    <!-- Cole o seu link completo do WhatsApp também aqui no href="", para o botão que fica no canto da tela. -->
+    <a href="https://wa.me/SEUNUMEROAQUI?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20ajuda." target="_blank" class="fixed bottom-6 right-6 p-4 rounded-full shadow-2xl transition-transform hover:scale-110" style="background-color: #25D366;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.414z"/></svg>
+    </a>
+
+    <script>
+        // =======================================================
+        // 1. INICIALIZAÇÃO GERAL E FUNÇÕES GLOBAIS
+        // =======================================================
+        lucide.createIcons();
+        
+        const formatCurrency = (value) => {
+            if (isNaN(value)) return "R$ 0,00";
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+        };
+
+        const parseCurrency = (value) => {
+            if (typeof value !== 'string') return 0;
+            return Number(value.replace(/\./g, '').replace(',', '.').replace(/[^0-9.-]+/g, ""));
+        };
+
+        const applyCurrencyMask = (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            value = (value / 100).toFixed(2) + '';
+            value = value.replace(".", ",");
+            value = value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+            e.target.value = value;
+        };
+        
+        const formatMonths = (totalMonths) => {
+            if (totalMonths <= 0) return '0 meses';
+            const years = Math.floor(totalMonths / 12);
+            const months = Math.round(totalMonths % 12);
+            let result = '';
+            if (years > 0) {
+                result += `${years} ano${years > 1 ? 's' : ''}`;
+            }
+            if (months > 0) {
+                result += `${years > 0 ? ' e ' : ''}${months} m${months > 1 ? 'eses' : 'ês'}`;
+            }
+            return result.trim();
+        };
+
+        function calculatePricePayment(balance, rate, term) {
+            if (rate === 0) return balance / term;
+            const factor = Math.pow(1 + rate, term);
+            return balance * (rate * factor) / (factor - 1);
+        }
+
+        // =======================================================
+        // 2. NAVEGAÇÃO PRINCIPAL DO SITE
+        // =======================================================
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        const mainContent = document.getElementById('main-content');
+        const mainFooter = document.getElementById('main-footer');
+        const allPageViews = document.querySelectorAll('.page-view');
+        
+        const btnTodosConteudos = document.getElementById('btn-todos-conteudos');
+        const btnsVoltar = document.querySelectorAll('.btn-voltar');
+
+        const hideAllViews = () => {
+            mainContent.classList.add('hidden');
+            mainFooter.classList.add('hidden');
+            allPageViews.forEach(view => view.classList.add('hidden'));
+        };
+
+        const showView = (viewElement) => {
+            hideAllViews();
+            if(viewElement) {
+                viewElement.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
+        };
+
+        const showMainContent = () => {
+            hideAllViews();
+            mainContent.classList.remove('hidden');
+            mainFooter.classList.remove('hidden');
+        };
+        
+        btnTodosConteudos.addEventListener('click', (e) => {
+            e.preventDefault();
+            showView(document.getElementById('todos-conteudos'));
+        });
+
+        document.body.addEventListener('click', (e) => {
+            const pageButton = e.target.closest('[data-page-button]');
+            if (pageButton) {
+                e.preventDefault();
+                const pageId = pageButton.dataset.pageButton;
+                showView(document.getElementById(pageId));
+            }
+        });
+
+        btnsVoltar.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showMainContent();
+                document.getElementById('conteudos').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // =======================================================
+        // 3. LÓGICA DO ARTIGO 4 (CHECKLIST DA VISITA)
+        // =======================================================
+        const observationItems = [
+            {
+                text: 'A realidade bate com os documentos? O tamanho dos cômodos, a área total e os limites do terreno parecem corresponder ao que está descrito na planta, na Matrícula e no cadastro da prefeitura (IPTU)?',
+                details: 'Discrepâncias aqui podem significar obras irregulares e custos futuros para você.'
+            },
+            {
+                text: 'Procure por problemas escondidos. Olhe com atenção para os cantos, o teto (principalmente de banheiros e cozinha), e embaixo de janelas.',
+                subItems: [
+                    'Sinais de infiltração ou goteiras (manchas escuras, mofo, cheiro de umidade)?',
+                    'Problemas estruturais (rachaduras grandes nas paredes ou no teto)?'
+                ]
+            },
+            {
+                text: 'Como é a dinâmica da vizinhança? Ande pela rua. A vizinhança parece segura e bem cuidada?',
+                details: 'O movimento corresponde ao que você espera para a sua rotina? A impressão que você tem do local é compatível com os dados oficiais de segurança e perfil do bairro?'
+            }
+        ];
+
+        const listContainer = document.getElementById('observation-list');
+        if (listContainer) {
+            observationItems.forEach(item => {
+                const itemWrapper = document.createElement('div');
+                itemWrapper.className = 'mb-4';
+                const mainItem = document.createElement('div');
+                mainItem.className = 'flex items-start cursor-pointer';
+                mainItem.innerHTML = `<div class="mt-1 mr-3 flex-shrink-0 w-5 h-5 border-2 border-gray-400 rounded-sm"></div> <div class="flex-grow">${item.text}</div>`;
+                itemWrapper.appendChild(mainItem);
+                
+                if (item.details) {
+                    const details = document.createElement('p');
+                    details.className = 'pl-8 text-sm text-gray-500 mt-1';
+                    details.textContent = item.details;
+                    itemWrapper.appendChild(details);
+                }
+                if (item.subItems) {
+                    const subList = document.createElement('div');
+                    subList.className = 'ml-8 mt-2 pl-4 border-l-2 border-gray-200';
+                    item.subItems.forEach(subText => {
+                        const subItem = document.createElement('div');
+                        subItem.className = 'flex items-start cursor-pointer text-sm mb-2';
+                        subItem.innerHTML = `<div class="mt-1 mr-3 flex-shrink-0 w-4 h-4 border-2 border-gray-400 rounded-sm"></div> <div class="flex-grow">${subText}</div>`;
+                        subList.appendChild(subItem);
+                    });
+                    itemWrapper.appendChild(subList);
+                }
+                listContainer.appendChild(itemWrapper);
+            });
+            
+            listContainer.addEventListener('click', (e) => {
+                const checkItem = e.target.closest('.flex.items-start');
+                if (checkItem) {
+                    checkItem.querySelector('div:first-child').classList.toggle('bg-blue-500');
+                }
+            });
+        }
+        
+        // =======================================================
+        // 4. LÓGICA DO SIMULADOR 1 (QUITAÇÃO ACELERADA)
+        // =======================================================
+        const amortizationForm = document.getElementById('amortization-form');
+        if (amortizationForm) {
+            const resultsContainer = document.getElementById('results-container');
+            const placeholder = document.getElementById('placeholder');
+            const warningsSection = document.getElementById('warnings-section');
+
+            amortizationForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const system = document.querySelector('input[name="amortizationSystem"]:checked').value;
+                const balance = parseFloat(document.getElementById('currentBalance').value);
+                const rateYearly = parseFloat(document.getElementById('interestRate').value);
+                const termMonths = parseInt(document.getElementById('remainingTerm').value);
+                const monthlyExtraPayment = parseFloat(document.getElementById('monthlyExtraPayment').value);
+
+                if (isNaN(balance) || isNaN(rateYearly) || isNaN(termMonths) || isNaN(monthlyExtraPayment) || balance <= 0 || rateYearly <= 0 || termMonths <= 0 || monthlyExtraPayment < 0) {
+                    alert('Por favor, preencha todos os campos com valores válidos e positivos.');
+                    return;
+                }
+
+                const rateMonthly = rateYearly / 12 / 100;
+                let originalTotalInterest, originalPayment;
+
+                if (system === 'PRICE') {
+                    originalPayment = calculatePricePayment(balance, rateMonthly, termMonths);
+                    originalTotalInterest = (originalPayment * termMonths) - balance;
+                } else { // SAC
+                    originalTotalInterest = (balance * rateMonthly * (termMonths + 1)) / 2;
+                }
+
+                let newBalance = balance, newTerm = 0, newTotalInterest = 0;
+                const originalAmortizationSAC = balance / termMonths;
+
+                while (newBalance > 0 && newTerm < termMonths * 2) {
+                    newTerm++;
+                    const interestThisMonth = newBalance * rateMonthly;
+                    newTotalInterest += interestThisMonth;
+
+                    let regularPaymentThisMonth;
+                    if (system === 'PRICE') {
+                        regularPaymentThisMonth = originalPayment;
+                    } else {
+                        regularPaymentThisMonth = originalAmortizationSAC + interestThisMonth;
+                    }
+
+                    const totalPaymentThisMonth = regularPaymentThisMonth + monthlyExtraPayment;
+                    let amortizationThisMonth = totalPaymentThisMonth - interestThisMonth;
+                    
+                    if (newBalance - amortizationThisMonth < 0) amortizationThisMonth = newBalance;
+                    
+                    newBalance -= amortizationThisMonth;
+                }
+
+                const monthsSaved = termMonths - newTerm;
+                const interestSaved = originalTotalInterest - newTotalInterest;
+                const totalExtraPaid = monthlyExtraPayment * newTerm;
+                
+                const result = {
+                    title: 'Resultado da Aceleração',
+                    description: 'Veja como um aporte mensal constante pode transformar seu financiamento.',
+                    metrics: [
+                        { label: 'Novo Prazo de Quitação', value: `${newTerm} meses` },
+                        { label: 'Tempo Reduzido', value: formatMonths(monthsSaved) },
+                        { label: 'Economia Total em Juros', value: formatCurrency(interestSaved) },
+                        { label: 'Valor Total Extra Aportado', value: formatCurrency(totalExtraPaid) }
+                    ]
+                };
+                
+                placeholder.classList.add('hidden');
+                warningsSection.classList.remove('hidden');
+                resultsContainer.innerHTML = '';
+                const card = document.createElement('div');
+                card.className = `p-6 rounded-lg shadow-sm border-l-4 bg-indigo-50 border-indigo-500`;
+                let metricsHtml = result.metrics.map(metric => `<div class="flex justify-between items-baseline"><p class="text-sm font-medium text-slate-600">${metric.label}:</p><p class="text-lg font-semibold text-indigo-800">${metric.value}</p></div>`).join('');
+                card.innerHTML = `<h3 class="text-xl font-bold text-indigo-800 mb-2">${result.title}</h3><p class="text-sm text-slate-600 mb-4">${result.description}</p><div class="space-y-3">${metricsHtml}</div>`;
+                resultsContainer.appendChild(card);
+            });
+        }
+        
+        // =======================================================
+        // 5. LÓGICA DO SIMULADOR 2 (FINANCIAMENTO SAC/PRICE)
+        // =======================================================
+        const sim2FormSection = document.getElementById('form-section');
+        if (sim2FormSection) {
+            const calculateBtn = document.getElementById('calculateBtn');
+            const recalculateBtn = document.getElementById('recalculateBtn');
+            const resultsSection = document.getElementById('results-section');
+            const resultsContent = document.getElementById('results-content');
+            const loader = document.getElementById('loader');
+            
+            document.getElementById('propertyValue').addEventListener('keyup', applyCurrencyMask);
+            document.getElementById('downPayment').addEventListener('keyup', applyCurrencyMask);
+
+            calculateBtn.addEventListener('click', () => {
+                const propertyValue = parseCurrency(document.getElementById('propertyValue').value);
+                const downPayment = parseCurrency(document.getElementById('downPayment').value);
+                const annualInterestRate = parseFloat(document.getElementById('interestRate').value.replace(',', '.')); 
+                const loanTermYears = parseInt(document.getElementById('loanTerm').value);
+
+                if (!propertyValue || isNaN(downPayment) || !annualInterestRate || !loanTermYears) {
+                    alert('Por favor, preencha todos os campos corretamente.');
+                    return;
+                }
+
+                const financedAmount = propertyValue - downPayment;
+                if (financedAmount <= 0) {
+                    alert('O valor do imóvel deve ser maior que o valor da entrada.');
+                    return;
+                }
+
+                resultsSection.classList.remove('hidden');
+                sim2FormSection.classList.add('hidden');
+                loader.classList.remove('hidden');
+                resultsContent.classList.add('hidden');
+                
+                setTimeout(() => {
+                    const loanTermMonths = loanTermYears * 12;
+                    const monthlyInterestRate = annualInterestRate / 100 / 12;
+                    const insuranceAndFees = (financedAmount * 0.0004); 
+
+                    // SAC
+                    const sacAmortization = financedAmount / loanTermMonths;
+                    let sacBalance = financedAmount;
+                    let sacTable = '<tbody>';
+                    let sacFirstPayment, sacLastPayment;
+
+                    for (let i = 1; i <= loanTermMonths; i++) {
+                        const interest = sacBalance * monthlyInterestRate;
+                        const payment = sacAmortization + interest + insuranceAndFees;
+                        sacBalance -= sacAmortization;
+                        if (i === 1) sacFirstPayment = payment;
+                        if (i === loanTermMonths) sacLastPayment = payment;
+                        
+                        if (i <= 12 || i % 12 === 0 || i === loanTermMonths) {
+                             sacTable += `<tr class="border-b border-gray-200 hover:bg-gray-50"><td class="p-3 text-center">${i}</td><td class="p-3">${formatCurrency(payment)}</td><td class="p-3">${formatCurrency(sacAmortization)}</td><td class="p-3">${formatCurrency(interest)}</td><td class="p-3">${formatCurrency(Math.max(0, sacBalance))}</td></tr>`;
+                        }
+                    }
+                    sacTable += '</tbody>';
+
+                    // Price
+                    const priceFactor = Math.pow(1 + monthlyInterestRate, loanTermMonths);
+                    const pricePaymentBase = financedAmount * (monthlyInterestRate * priceFactor) / (priceFactor - 1);
+                    const pricePayment = pricePaymentBase + insuranceAndFees;
+                    let priceBalance = financedAmount;
+                    let priceTable = '<tbody>';
+
+                    for (let i = 1; i <= loanTermMonths; i++) {
+                        const interest = priceBalance * monthlyInterestRate;
+                        const amortization = pricePaymentBase - interest;
+                        priceBalance -= amortization;
+                        
+                         if (i <= 12 || i % 12 === 0 || i === loanTermMonths) {
+                            priceTable += `<tr class="border-b border-gray-200 hover:bg-gray-50"><td class="p-3 text-center">${i}</td><td class="p-3">${formatCurrency(pricePayment)}</td><td class="p-3">${formatCurrency(amortization)}</td><td class="p-3">${formatCurrency(interest)}</td><td class="p-3">${formatCurrency(Math.max(0, priceBalance))}</td></tr>`;
+                         }
+                    }
+                    priceTable += '</tbody>';
+                    
+                    document.getElementById('sac-first').textContent = formatCurrency(sacFirstPayment);
+                    document.getElementById('sac-last').textContent = formatCurrency(sacLastPayment);
+                    document.getElementById('price-payment').textContent = formatCurrency(pricePayment);
+                    const tableHeader = `<table class="w-full text-sm text-left text-gray-600"><thead class="text-xs text-gray-700 uppercase bg-gray-100"><tr><th class="p-3 text-center">Mês</th><th class="p-3">Parcela</th><th class="p-3">Amortização</th><th class="p-3">Juros</th><th class="p-3">Saldo Devedor</th></tr></thead>`;
+                    document.getElementById('sac-table-container').innerHTML = `${tableHeader}${sacTable}</table>`;
+                    document.getElementById('price-table-container').innerHTML = `${tableHeader}${priceTable}</table>`;
+
+                    loader.classList.add('hidden');
+                    resultsContent.classList.remove('hidden');
+                }, 1000);
+            });
+
+            recalculateBtn.addEventListener('click', () => {
+                resultsSection.classList.add('hidden');
+                sim2FormSection.classList.remove('hidden');
+            });
+
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active', 'border-blue-500', 'text-blue-600'));
+                    button.classList.add('active', 'border-blue-500', 'text-blue-600');
+                    const targetId = button.dataset.target;
+                    document.getElementById('sac-table-container').classList.add('hidden');
+                    document.getElementById('price-table-container').classList.add('hidden');
+                    document.getElementById(targetId).classList.remove('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
+
